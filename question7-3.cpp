@@ -16,13 +16,12 @@ int main()
 
 int exponentiation(int x, int n)
 {
-    int result = x;
     if(n == 0)
     {
         return 1;
     }
     else if(n >= 1)
     {
-        return (result * exponentiation(x, n - 1));
+        return (x * exponentiation(x, n - 1));
     }
 }
